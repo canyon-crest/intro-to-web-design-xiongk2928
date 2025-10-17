@@ -4,9 +4,17 @@ body{
 }
 
 #content{
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
     
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
 }
 
 p{
@@ -17,10 +25,17 @@ img{
     float: left;
     width: 200px;
     margin-right: 1em;
+    border-radius: 10px;
 }
 
 #pic2{
     float:right;
+}
+
+#sidebar{
+    float:right;
+    border: 4px 0px 0px 0px solid black;
+    margin-right: 4em;
 }
 
 a:link{
@@ -39,4 +54,37 @@ a:hover{
 
 a:active{
     color:blue;
+}
+
+/*4 different sizes >1200px...*/
+@media (max-width:1200px) {
+    #container{
+        width: 600px;
+    }
+}
+
+@media (max-width:992px) {
+    #container{
+        width: 80% !important;
+    }
+
+    #container,p{
+        margin:0;
+        padding:0;
+        border: none;
+    }
+}
+
+/*Shouldn't have any scrollbar*/
+@media (max-width:768px){
+    #sidebar{
+        display:none;
+    }
+    img{
+        clear:both;
+    }
+}
+
+.highlight{
+    background-color: yellow;
 }
